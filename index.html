@@ -90,7 +90,6 @@ body {
 .bottom {
   width: 100%;
   text-align: center;
-  font-weight: bold;
   margin-top: 20px;
   color: white;
 }
@@ -101,15 +100,13 @@ body {
 
 .title-role {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 29px; /* smaller for elegance */
+  font-size: 20px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: white;
   display: inline-block;
-  padding: 6px 18px;
-  margin-top: 12px;  /* space from name */
-  border: 1.5px solid black;
 }
+
 
 
 .bottom svg {
@@ -142,10 +139,11 @@ img {
     <!-- Content container -->
     <div class="container">
       <!-- Image and name container. Change to your pictue here. -->
-      <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
-        <p><span class="allura-regular">Jeff Carrillo</span></p>
-        <p class="title-role">Owner and CEO</p>
+      <div style="text-align: center; margin-top: 20px;">
+        <p class="allura-regular" style="margin: 0;">Jeff Carrillo</p>
+        <p class="title-role" style="margin: -20px; margin-bottom: 50px;">Owner and CEO</p>
       </div>
+
 
       </div>
 
@@ -188,7 +186,7 @@ img {
       <div class="container">
         <div class="bottom">
           <a href="mailto:youremail@example.com"
-             style="margin-left: 15px; vertical-align: middle; text-decoration: none; color: white; font-weight: bold;"
+             style="margin-left: 15px; vertical-align: middle; text-decoration: none; color: white;"
              aria-label="Email Jeff">
             <i data-feather="mail" style="stroke: white; width: 20px; height: 20px; vertical-align: middle;"></i>
             <span style="margin-left: 5px;">Contact Me</span>

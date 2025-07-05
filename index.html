@@ -15,6 +15,7 @@
 body {
   background-color: black;
   color: white; /* Optional: make text white for contrast */
+  padding-bottom: 50px;
 }
 
 .container {
@@ -71,13 +72,43 @@ body {
 .links-container {
   display: flex;
   flex-direction: column;
-  jusify-content: center;
-  align-items: center;
+  align-items: center;  /* centers the whole container horizontally */
+  gap: 10px;            /* space between links */
+  width: 100%;
+  margin-top: 20px;
 }
 
 .links-container a {
-  width: 80%;
+  display: flex;
+  align-items: center;             /* Vertically center content */
+  justify-content: center;        /* Horizontally center content */
+  width: 300px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 12px;
+  background-color: #222;         /* Optional: for contrast */
+  gap: 10px;                      /* Space between icon and text */
+  text-align: center;
 }
+
+.link-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+
 
 .w3-theme-l1:hover {
   background-color: lightgray !important;
@@ -106,8 +137,6 @@ body {
   color: white;
   display: inline-block;
 }
-
-
 
 .bottom svg {
   stroke: black;
@@ -147,41 +176,40 @@ img {
 
       <!-- Links section 1. Replace the # inside of the "" with your links. -->
       <div class="links-container">
-        <a href="https://jczounds.com/" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="background.png" class="link-icon">
+        <a href="https://jczounds.com/" target="_blank">
+          <!-- <img src="background.png" class="link-icon" alt="Website icon"> -->
           Website
         </a>
-        <br>
-        <a href="mailto:Jczounds@gmail.com" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="gm.png" class="link-icon">
+        <a href="mailto:Jczounds@gmail.com" target="_blank">
+          <!-- <img src="gm.png" class="link-icon" alt="Gmail icon"> -->
           Contact Me
         </a>
-        <br>
-        <a href="https://www.instagram.com/jczounds/" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="link-icon" alt="Instagram icon">
+        <a href="https://www.instagram.com/jczounds/" target="_blank">
+          <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="link-icon" alt="Instagram icon"> -->
           Instagram
         </a>
-        <br>
+
+
+
         <a href="https://soundcloud.com/JeffCarrDmv" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="soundcloud.png" class="link-icon">
+          <!-- <img src="soundcloud.png" class="link-icon"> -->
           SoundCloud
         </a>
-        <br>
+
         <a href="https://www.facebook.com/JcZounds/" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="facebook.png" class="link-icon">
+          <!-- <img src="facebook.png" class="link-icon"> -->
           Facebook
         </a>
-        <br>
+
         <a href="https://www.threads.com/@jczounds" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="thread.png" class="link-icon">
+          <!-- <img src="thread.png" class="link-icon"> -->
           Threads
         </a>
-        <br>
+
         <a href="https://g.page/r/CXDVcW8A4d5dEAI/review" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
-          <img src="googoo.png" class="link-icon">
+          <!-- <img src="googoo.png" class="link-icon"> -->
           Google Reviews
         </a>
-
       </div>
     </div>
     <script>

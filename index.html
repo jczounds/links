@@ -80,7 +80,7 @@ body {
 }
 
 .w3-theme-l1:hover {
-  background-color: gold !important;
+  background-color: lightgray !important;
 }
 
 .margin-top-2 {
@@ -90,28 +90,27 @@ body {
 .bottom {
   width: 100%;
   text-align: center;
-  width: auto;
-  font-weight: bolder;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
 }
+
+.bottom span, .bottom a {
+  color: white;
+}
+
 .title-role {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px; /* smaller for elegance */
-  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 29px; /* smaller for elegance */
+  font-weight: 500;
   letter-spacing: 1px;
-  color: #333;
+  color: white;
   display: inline-block;
   padding: 6px 18px;
   margin-top: 12px;  /* space from name */
   border: 1.5px solid black;
-  border-radius: 25px;
-  background-color: white;
-  box-shadow: 1px 1px 6px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.bottom span {
-  color: black;
-}
 
 .bottom svg {
   stroke: black;
@@ -176,14 +175,30 @@ img {
           <img src="thread.png" class="link-icon">
           Threads
         </a>
+        <br>
+        <a href="https://soundcloud.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+          <img src="thread.png" class="link-icon">
+          Google Reviews
+        </a>
 
       </div>
 
 
       <!-- Bottom section 3 -->
-      <div class="bottom margin-top-2 w3-padding w3-round">
-        <span style="vertical-align: 7px;"> Jeff 2025</span>
+      <div class="container">
+        <div class="bottom">
+          <a href="mailto:youremail@example.com"
+             style="margin-left: 15px; vertical-align: middle; text-decoration: none; color: white; font-weight: bold;"
+             aria-label="Email Jeff">
+            <i data-feather="mail" style="stroke: white; width: 20px; height: 20px; vertical-align: middle;"></i>
+            <span style="margin-left: 5px;">Contact Me</span>
+          </a>
+        </div>
       </div>
+
+
+
+
 
     </div>
     <script>

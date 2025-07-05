@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">    
 <title>Links website</title>
 <script src="https://unpkg.com/feather-icons"></script>
 <style>
-body {
-  background: url("https://www.w3schools.com/howto/img_link_tree_template2_bg.jpg"); /* The image used for background */
-}
+
 
 .container {
   width: 100%;
@@ -19,6 +20,47 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: none;
+}
+
+
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-pic {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+}
+.top-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 .links-container {
   display: flex;
@@ -32,7 +74,7 @@ body {
 }
 
 .w3-theme-l1:hover {
-  background-color: #f279a1 !important;
+  background-color: gold !important;
 }
 
 .margin-top-2 {
@@ -45,14 +87,32 @@ body {
   width: auto;
   font-weight: bolder;
 }
+.title-role {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px; /* smaller for elegance */
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #333;
+  display: inline-block;
+  padding: 6px 18px;
+  margin-top: 12px;  /* space from name */
+  border: 1.5px solid black;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
 .bottom span {
-  color: #ed4d82;
+  color: black;
 }
 
 .bottom svg {
-  stroke: #ed4d82;
-  fill: #ed4d82;
+  stroke: black;
+  fill: black;
+}
+img {
+  border: 3px solid white;
 }
 
 @media (min-width: 768px) {
@@ -68,40 +128,60 @@ body {
 </style>
   </head>
   <body>
+    <div class="banner-wrapper">
+      <img src="background.png" alt="Top Banner" class="top-banner">
+      <img src="jeffpic.JPG" alt="Profile" class="profile-pic">
+    </div>
+    <div style="margin-top: 70px;"></div>
+
     <!-- Content container -->
     <div class="container">
-
       <!-- Image and name container. Change to your pictue here. -->
-      <div style="text-align: center">
-        <img src="https://i.pinimg.com/originals/74/d8/11/74d81182122d65ef91c61d1142514ecf.jpg" class="w3-margin" alt="image" width="150px" height="150px" style="border-radius: 50%;">
-        <p><span class="name w3-padding w3-pink w3-round" style="font-weight: bolder;">Hi, I'm Jeff!</span></p>
-        <p style="font-weight: bolder;">Check out my links!</p>
+      <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
+        <p><span class="allura-regular">Jeff Carrillo</span></p>
+        <p class="title-role">Owner and CEO</p>
+      </div>
+
       </div>
 
       <!-- Links section 1. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MY SOCIAL NETWORKS</h4>
       <div class="links-container">
-        <a href="https://instagram.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Instagram</a>
+        <a href="https://instagram.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="link-icon" alt="Instagram icon">
+          Instagram
+        </a>
         <br>
-        <a href="https://soundcloud.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">SoundCloud</a>
+        <a href="https://soundcloud.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+          <img src="soundcloud.png" class="link-icon">
+          SoundCloud
+        </a>
+        <br>
+        <a href="https://soundcloud.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+          <img src="background.png" class="link-icon">
+          Website
+        </a>
+        <br>
+        <a href="https://soundcloud.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+          <img src="facebook.png" class="link-icon">
+          Facebook
+        </a>
+        <br>
+        <a href="https://soundcloud.com/jeff" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">
+          <img src="thread.png" class="link-icon">
+          Threads
+        </a>
+
       </div>
 
-      <!-- Links section 2. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MY BUSINESS</h4>
-      <div class="links-container">
-        <a href="https://jeff-weddings.com" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Weddings</a>
-      </div>
 
       <!-- Bottom section 3 -->
       <div class="bottom margin-top-2 w3-padding w3-round">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        <span style="vertical-align: 7px;"> 2025 - Jeff</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span style="vertical-align: 7px;"> Jeff 2025</span>
       </div>
 
     </div>
     <script>
       feather.replace()
     </script>
-    
+
 </body></html>
